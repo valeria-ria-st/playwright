@@ -26,6 +26,7 @@ def browser_context_args(browser_context_args):
 def test_has_title(page: Page):
     page.goto("https://playwright.dev/")
     expect(page).to_have_title(re.compile("Playwright"))
+    
 
 # ИЗМЕНЕНИЕ: Новый тест, который проверяет, что размер экрана действительно 1920x1080
 def test_custom_viewport(page: Page):
